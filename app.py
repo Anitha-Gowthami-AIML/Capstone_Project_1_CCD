@@ -12,6 +12,13 @@ import plotly.express as px
 import plotly.graph_objects as go
 import joblib, json, warnings, os
 import sklearn
+import subprocess, sys, os
+packages = {'plotly': '5.28.0', 'pandas': '2.1.4', 'numpy': '1.26.4', 'scikit-learn': '1.5.0', 'xgboost': '2.1.1', 'imbalanced-learn': '0.12.0'}
+for pkg, ver in packages.items():
+    try:
+        __import__(pkg.replace('-', '_'))
+    except:
+        os.system(f"{sys.executable} -m pip install {pkg}=={ver} -q")
 warnings.filterwarnings('ignore')
 
 st.set_page_config(
