@@ -5,28 +5,13 @@ Streamlit UI — loads pre-trained PKL models only.
 Run model_train.py first to generate models/
 """
 
-import subprocess
-import sys
-import os
-
-# CRITICAL: Install packages BEFORE importing them
-packages = {'plotly': '5.28.0', 'pandas': '2.1.4', 'numpy': '1.26.4', 'scikit-learn': '1.5.0', 'xgboost': '2.1.1', 'imbalanced-learn': '0.12.0'}
-for pkg, ver in packages.items():
-    try:
-        __import__(pkg.replace('-', '_'))
-    except ImportError:
-        print(f"Installing {pkg}=={ver}...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", f"{pkg}=={ver}", "-q"])
-
-# NOW import after packages are installed
 import streamlit as st
 import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
-import joblib, json, warnings
+import joblib, json, warnings, os
 import sklearn
-
 warnings.filterwarnings('ignore')
 
 st.set_page_config(
