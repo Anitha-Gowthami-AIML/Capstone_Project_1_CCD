@@ -45,14 +45,16 @@ All 13 trained models are served through a Streamlit web app with real-time pred
 
 ## 🚀 Live Demo
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://capstoneproject1-n5ckeazmkwjaclud7rz6xy.streamlit.app/)
+
+> 🌐 **[https://capstoneproject1-n5ckeazmkwjaclud7rz6xy.streamlit.app/](https://capstoneproject1-n5ckeazmkwjaclud7rz6xy.streamlit.app/)**
+
+No installation needed — the app is live and publicly accessible.
+
+To run locally instead:
 ```bash
-# After setup (see Quickstart below)
 streamlit run app.py
 ```
-
-Navigate to `http://localhost:8501` in your browser.
-
----
 
 ## 📁 Project Structure
 
