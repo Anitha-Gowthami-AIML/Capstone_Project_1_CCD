@@ -30,7 +30,7 @@ https://github.com/Anitha-Gowthami-AIML/Capstone_Project_1_CCD
 CreditLens solves the **credit default classification problem** using the UCI dataset of 30,000 Taiwanese bank clients.
 
 ### Core Challenge
-- Severe **class imbalance (~22% defaults)**
+- Moderate **class imbalance (~22% defaults)**
 - Standard models tend to **miss defaulters (low recall)**
 
 ### Solution Strategy
