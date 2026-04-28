@@ -6,7 +6,6 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.56.0-FF4B4B?logo=streamlit)](https://streamlit.io/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-F7931E?logo=scikitlearn)](https://scikit-learn.org/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.1.4-189AB4)](https://xgboost.readthedocs.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 ---
 
@@ -373,13 +372,7 @@ This is a CSS specificity issue with Streamlit's `var(--text)` variable. Ensure 
 streamlit run app.py --server.port 8502
 ```
 
----
 
-## 📄 License
-
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
-
----
 
 ## 🙏 Acknowledgements
 
